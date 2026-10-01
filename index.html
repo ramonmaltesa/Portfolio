@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Ramón Maltes Arancibia, ingeniero con más de 15 años de experiencia en Business Intelligence, analítica de datos y transformación digital.">
+  <meta name="theme-color" content="#f8fafc">
+  <title>Ramón Maltes | Business Intelligence &amp; Data Analytics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { ink: '#10231c', forest: '#164e3b', mint: '#dff7ed', lime: '#c8f169' },
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+          boxShadow: { soft: '0 24px 60px -28px rgba(15, 45, 35, .28)' }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-[#f8faf8] font-sans text-ink antialiased">
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-slate-200/70 bg-[#f8faf8]/90 backdrop-blur-lg">
+    <nav class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8" aria-label="Navegación principal">
+      <a href="#inicio" class="flex items-center gap-3 font-bold" aria-label="Ir al inicio">
+        <span>Ramón Maltes <span class="hidden font-normal text-slate-500 sm:inline">/ BI &amp; Data Analytics</span></span>
+      </a>
+      <button id="menu-button" class="rounded-lg p-2 md:hidden" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div id="nav-links" class="nav-links hidden items-center gap-8 md:flex">
+        <a href="#sobre-mi">Sobre mí</a><a href="#habilidades">Habilidades</a><a href="#proyectos">Proyectos</a><a href="#capacitaciones">Capacitaciones</a>
+        <a href="mailto:ramon.maltes.a@gmail.com?subject=Contacto%20desde%20tu%20portafolio" class="rounded-full bg-ink px-5 py-2.5 font-semibold text-white transition hover:bg-forest" aria-label="Enviar un correo a Ramón Maltes">Conversemos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="relative overflow-hidden pb-24 pt-36 sm:pt-44 lg:pb-32">
+      <div class="hero-grid pointer-events-none absolute inset-0 opacity-45" aria-hidden="true"></div>
+      <div class="relative mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.25fr_.75fr] lg:px-8">
+        <div>
+          <p class="mb-6 inline-flex items-center gap-2 rounded-full border border-forest/15 bg-white px-4 py-2 text-sm font-semibold text-forest shadow-sm">
+            <span class="h-2 w-2 rounded-full bg-emerald-500"></span> Business Intelligence · Valparaíso, Chile
+          </p>
+          <h1 class="max-w-4xl text-5xl font-extrabold leading-[1.03] tracking-[-.05em] sm:text-6xl lg:text-7xl">
+            Conecto datos, procesos y tecnología para <span class="text-forest">decidir mejor.</span>
+          </h1>
+          <p class="mt-7 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">Ingeniero especializado en Business Intelligence, Data Analytics y transformación digital, con más de 15 años construyendo indicadores, dashboards y reportes para la toma de decisiones.</p>
+          <div class="mt-9 flex flex-wrap gap-3">
+            <a href="#proyectos" class="button-primary">Explorar proyectos <span aria-hidden="true">↓</span></a>
+            <a href="mailto:ramon.maltes.a@gmail.com" class="button-secondary">Contactarme</a>
+          </div>
+        </div>
+        <aside class="relative mx-auto w-full max-w-md rounded-[2rem] border border-white bg-white/85 p-5 shadow-soft" aria-label="Perfil profesional de Ramón Maltes">
+          <img src="https://drive.google.com/thumbnail?id=1tXHNFJsLaGcOadeZWOiptN6JGFQX77iK&amp;sz=w1000" width="493" height="508" alt="Retrato profesional de Ramón Maltes" class="profile-photo" fetchpriority="high">
+          <div class="mb-5 mt-5 flex items-center justify-between gap-3"><span class="text-sm font-semibold text-slate-500">TRAYECTORIA</span><div class="flex flex-wrap justify-end gap-2"><a href="https://drive.google.com/file/d/1Aq_TfnDyl2-yBpT5l_OU7DVv6H03DDLj/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="rounded-full bg-lime px-3 py-1 text-xs font-bold text-ink">Curriculum ↗</a><a href="https://www.linkedin.com/in/ramonmaltesa" target="_blank" rel="noopener noreferrer" class="rounded-full bg-mint px-3 py-1 text-xs font-bold text-forest">LinkedIn ↗</a></div></div>
+          <div class="space-y-4">
+            <div class="metric"><strong>15+</strong><span>años de experiencia profesional</span></div>
+            <div class="metric"><strong>6</strong><span>sectores de experiencia aplicada</span></div>
+          </div>
+          <p class="mt-5 border-t border-slate-100 pt-4 text-sm leading-6 text-slate-500">Power BI · Tableau · Qlik · Databricks · Dynamics 365 CRM · Python · SQL · R · HTML · SAP</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="scroll-mt-20 border-y border-slate-200 bg-white py-24">
+      <div class="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[.7fr_1.3fr] lg:px-8">
+        <div><p class="section-kicker">PERFIL</p><h2 class="section-title">Sobre mí</h2></div>
+        <div class="max-w-3xl">
+          <p class="text-2xl font-semibold leading-relaxed tracking-tight">Soy ingeniero con más de 15 años de experiencia integrando datos, procesos y tecnología para construir indicadores, dashboards ejecutivos y reportes estratégicos.</p>
+          <p class="mt-5 leading-7 text-slate-600">Mi trayectoria abarca educación superior, servicios, logística, industria y proyectos de ingeniería. Actualmente lidero la estrategia de vinculación con una comunidad de más de 85.000 Alumni en la Universidad Técnica Federico Santa María, gestionando iniciativas de transformación digital, analítica y Microsoft Dynamics 365 CRM.</p>
+          <p class="mt-4 leading-7 text-slate-600">Soy Ingeniero de Ejecución en Gestión Industrial, diplomado en Python y Ciencia de Datos por la Pontificia Universidad Católica de Chile, y actualmente curso un Máster en Business Intelligence y Analytics.</p>
+          <div class="mt-7 flex flex-wrap gap-x-6 gap-y-3"><a href="mailto:ramon.maltes.a@gmail.com" class="inline-flex items-center gap-2 font-bold text-forest underline decoration-lime decoration-4 underline-offset-4">ramon.maltes.a@gmail.com <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/ramonmaltesa" target="_blank" rel="noopener noreferrer" class="font-bold text-forest">Ver LinkedIn ↗</a><a href="https://drive.google.com/file/d/1Aq_TfnDyl2-yBpT5l_OU7DVv6H03DDLj/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="font-bold text-forest">Ver Curriculum ↗</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="scroll-mt-20 py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <p class="section-kicker">HERRAMIENTAS</p><h2 class="section-title">Capacidades técnicas</h2>
+        <p class="mt-4 max-w-2xl text-slate-600">Un stack enfocado en extraer, analizar y comunicar información con claridad.</p>
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <a class="skill-card" href="#proyecto-python" aria-label="Ir al proyecto destacado de Python"><span class="skill-icon bg-[#e8f5ff]"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/python.svg" alt="Logo de Python" loading="lazy"></span><div><h3>Python</h3><p>Pandas · Scikit-learn</p></div></a>
+          <a class="skill-card" href="#proyecto-r" aria-label="Ir al proyecto destacado de R"><span class="skill-icon bg-[#e9f1fb]"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/r.svg" alt="Logo de R" loading="lazy"></span><div><h3>R</h3><p>Tidyverse · Estadística</p></div></a>
+          <a class="skill-card" href="#proyecto-power-bi" aria-label="Ir a los proyectos destacados de Power BI relacionados con SQL"><span class="skill-icon bg-[#fff3dc]"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/microsoftsqlserver.svg" alt="Logo de Microsoft SQL Server" loading="lazy"></span><div><h3>SQL</h3><p>Consultas · Modelado</p></div></a>
+          <a class="skill-card" href="#proyecto-power-bi" aria-label="Ir a los proyectos destacados de Power BI"><span class="skill-icon bg-[#fff8cc]"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/powerbi.svg" alt="Logo de Power BI" loading="lazy"></span><div><h3>Power BI</h3><p>DAX · Storytelling</p></div></a>
+          <a class="skill-card" href="#proyecto-qlik" aria-label="Ir al proyecto destacado de Qlik"><span class="skill-icon bg-[#eafff1]"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/qlik.svg" alt="Logo de Qlik" loading="lazy"></span><div><h3>Qlik</h3><p>Qlik Cloud · Data Literacy</p></div></a>
+          <a class="skill-card" href="#capacitaciones" aria-label="Ir a las capacitaciones de Databricks"><span class="skill-icon bg-[#fff0ec]"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/databricks.svg" alt="Logo de Databricks" loading="lazy"></span><div><h3>Databricks</h3><p>Lakehouse · Data Engineering</p></div></a>
+          <a class="skill-card" href="#proyecto-dynamics-365" aria-label="Ir al proyecto destacado de Microsoft Dynamics 365"><span class="skill-icon bg-[#eef2ff]"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/dynamics365.svg" alt="Logo de Dynamics 365" loading="lazy"></span><div><h3>Dynamics 365 CRM</h3><p>Gestión de relaciones · Automatización de procesos</p></div></a>
+          <a class="skill-card" href="#proyecto-html" aria-label="Ir al proyecto destacado de HTML"><span class="skill-icon bg-[#fff1e7]"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/html5.svg" alt="Logo de HTML5" loading="lazy"></span><div><h3>HTML</h3><p>Estructura web · Semántica</p></div></a>
+          <a class="skill-card" href="#proyecto-tableau" aria-label="Ir al proyecto destacado de Tableau"><span class="skill-icon bg-[#e8f2ff]"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/tableau.svg" alt="Logo de Tableau" loading="lazy"></span><div><h3>Tableau</h3><p>Dashboards · Visual Analytics</p></div></a>
+          <article class="skill-card"><span class="skill-icon bg-[#e8f5ff]"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/sap.svg" alt="Logo de SAP" loading="lazy"></span><div><h3>SAP</h3><p>ERP · Gestión empresarial</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="scroll-mt-20 bg-ink py-24 text-white">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="flex flex-col justify-between gap-5 md:flex-row md:items-end">
+          <div><p class="section-kicker !text-lime">PROYECTOS</p><h2 class="section-title">Proyectos destacados</h2></div>
+        </div>
+        <div id="proyecto-dynamics-365" class="mt-10 flex scroll-mt-28 items-center gap-3"><span class="h-px w-10 bg-lime"></span><div><p class="text-sm font-bold uppercase tracking-[.18em] text-lime">Microsoft Dynamics 365</p><h3 class="mt-1 text-xl font-bold">Transformación digital y CRM institucional USM</h3></div></div>
+        <div class="mt-7 grid gap-6 md:grid-cols-2">
+          <article class="project-card">
+            <div class="project-top bg-[#eef2ff]"><span>01</span><svg viewBox="0 0 260 120" role="img" aria-label="Ecosistema institucional conectado mediante CRM"><circle cx="130" cy="60" r="23" fill="#536dfe"/><circle cx="45" cy="30" r="15" fill="#164e3b"/><circle cx="45" cy="91" r="15" fill="#164e3b"/><circle cx="215" cy="30" r="15" fill="#c8f169"/><circle cx="215" cy="91" r="15" fill="#c8f169"/><path d="M60 35l49 18M60 85l49-18m42-14 49-18m-49 32 49 18" fill="none" stroke="#536dfe" stroke-width="5" stroke-linecap="round"/></svg></div>
+            <div class="project-body"><div class="tags"><span>Dynamics 365</span><span>CRM</span><span>Transformación digital</span></div><h3>Implementación de Microsoft Dynamics 365 CRM</h3><p>Proyecto de transformación digital para implementar Microsoft Dynamics 365 CRM en la Dirección General de Vinculación con el Medio de la Universidad Técnica Federico Santa María y posteriormente extenderlo a nivel institucional como CRM institucional. Como proyecto complementario, participé en el desarrollo del sitio de requerimientos institucionales Conecta USM.</p><div class="project-actions project-actions-single"><a href="https://conecta.usm.cl/" target="_blank" rel="noopener noreferrer" aria-label="Visitar el sitio de requerimientos institucionales Conecta USM en una pestaña nueva">Visitar Conecta USM <span>↗</span></a></div></div>
+          </article>
+        </div>
+
+        <div id="proyecto-power-bi" class="mt-10 flex scroll-mt-28 items-center gap-3"><span class="h-px w-10 bg-lime"></span><div><p class="text-sm font-bold uppercase tracking-[.18em] text-lime">Power BI</p><h3 class="mt-1 text-xl font-bold">Dashboards interactivos de empleabilidad USM</h3></div></div>
+        <div class="mt-7 grid gap-6 md:grid-cols-2">
+          <article class="project-card">
+            <div class="project-top bg-[#dff7ed]"><span>01</span><svg viewBox="0 0 260 120" role="img" aria-label="Gráfico ascendente de retención"><path d="M12 103 58 78 103 86 151 48 199 55 248 18" fill="none" stroke="#164e3b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="m231 18 17 0 0 17" fill="none" stroke="#164e3b" stroke-width="6"/></svg></div>
+            <div class="project-body"><div class="tags"><span>Power BI</span><span>DAX</span><span>Data Visualization</span></div><h3>Estudio de Empleabilidad Pregrado 2021 USM</h3><p>Dashboard interactivo para explorar los principales resultados e indicadores del estudio de empleabilidad de titulados de pregrado USM.</p><div class="project-actions project-actions-single"><a href="https://app.powerbi.com/view?r=eyJrIjoiYjEzM2QwZWMtZmE2ZC00OTA3LTkyNzgtOGVhNTBlNTJhODlhIiwidCI6IjAyNjI1Njc2LTMyMjctNDQwYS05YzY4LWJiNmQyOWRlNDIwNiIsImMiOjR9" target="_blank" rel="noopener noreferrer" aria-label="Ver dashboard del Estudio de Empleabilidad Pregrado 2021 USM en una pestaña nueva">Ver dashboard <span>↗</span></a></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top bg-[#e7ecff]"><span>02</span><svg viewBox="0 0 260 120" role="img" aria-label="Gráfico de barras de costes"><rect x="18" y="67" width="34" height="38" rx="4" fill="#3755a5"/><rect x="75" y="41" width="34" height="64" rx="4" fill="#3755a5"/><rect x="132" y="25" width="34" height="80" rx="4" fill="#3755a5"/><rect x="189" y="12" width="34" height="93" rx="4" fill="#c8f169"/></svg></div>
+            <div class="project-body"><div class="tags"><span>Power BI</span><span>DAX</span><span>Data Visualization</span></div><h3>Estudio de Empleabilidad Pregrado 2020 USM</h3><p>Dashboard interactivo para explorar los principales resultados e indicadores del estudio de empleabilidad de titulados de pregrado USM.</p><div class="project-actions project-actions-single"><a href="https://app.powerbi.com/view?r=eyJrIjoiODJiMzhhZWEtNGMyMS00NjBkLWI5MWQtYWViYzlhMzdiM2ExIiwidCI6IjAyNjI1Njc2LTMyMjctNDQwYS05YzY4LWJiNmQyOWRlNDIwNiIsImMiOjR9&amp;pageName=ReportSection355400b922260eab39b4" target="_blank" rel="noopener noreferrer" aria-label="Ver dashboard del Estudio de Empleabilidad Pregrado 2020 USM en una pestaña nueva">Ver dashboard <span>↗</span></a></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top bg-[#fff0da]"><span>03</span><svg viewBox="0 0 260 120" role="img" aria-label="Gráfico de resultados de empleabilidad"><path d="M22 99V68h36v31m17 0V45h36v54m17 0V57h36v42m17 0V21h36v78" fill="none" stroke="#9a5a18" stroke-width="12" stroke-linejoin="round"/><path d="M13 105h234" stroke="#9a5a18" stroke-width="3"/></svg></div>
+            <div class="project-body"><div class="tags"><span>Power BI</span><span>DAX</span><span>Data Visualization</span></div><h3>Estudio de Empleabilidad Postgrado 2021 USM</h3><p>Dashboard interactivo para explorar los principales resultados e indicadores del estudio de empleabilidad de graduados de postgrado USM.</p><div class="project-actions project-actions-single"><a href="https://app.powerbi.com/view?r=eyJrIjoiMGIyMjM0MzQtMzU1ZC00OThhLTljYWQtOTA5ODY2ZjhhZjlhIiwidCI6IjAyNjI1Njc2LTMyMjctNDQwYS05YzY4LWJiNmQyOWRlNDIwNiIsImMiOjR9" target="_blank" rel="noopener noreferrer" aria-label="Ver dashboard del Estudio de Empleabilidad Postgrado 2021 USM en una pestaña nueva">Ver dashboard <span>↗</span></a></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top bg-[#e8f5ff]"><span>04</span><svg viewBox="0 0 260 120" role="img" aria-label="Panel con indicadores de negocio"><rect x="14" y="12" width="232" height="96" rx="10" fill="#fff" stroke="#3776ab" stroke-width="3"/><circle cx="66" cy="59" r="25" fill="none" stroke="#dbeafe" stroke-width="12"/><path d="M66 34a25 25 0 0 1 22 37" fill="none" stroke="#3776ab" stroke-width="12"/><rect x="112" y="32" width="105" height="12" rx="6" fill="#bfdbfe"/><rect x="112" y="55" width="76" height="12" rx="6" fill="#3776ab"/><rect x="112" y="78" width="92" height="12" rx="6" fill="#93c5fd"/></svg></div>
+            <div class="project-body"><div class="tags"><span>Power BI</span><span>DAX</span><span>Data Visualization</span></div><h3>Estudio de Empleabilidad Postgrado 2020 USM</h3><p>Dashboard interactivo para explorar los principales resultados e indicadores del estudio de empleabilidad de graduados de postgrado USM.</p><div class="project-actions project-actions-single"><a href="https://app.powerbi.com/view?r=eyJrIjoiOTI2MDUwZTctYjRlMy00OTBjLWJkYzItNzg2ODRhMzk1NTNhIiwidCI6IjAyNjI1Njc2LTMyMjctNDQwYS05YzY4LWJiNmQyOWRlNDIwNiIsImMiOjR9" target="_blank" rel="noopener noreferrer" aria-label="Ver dashboard del Estudio de Empleabilidad Postgrado 2020 USM en una pestaña nueva">Ver dashboard <span>↗</span></a></div></div>
+          </article>
+        </div>
+
+        <div id="proyecto-qlik" class="mt-20 flex scroll-mt-28 items-center gap-3"><span class="h-px w-10 bg-lime"></span><div><p class="text-sm font-bold uppercase tracking-[.18em] text-lime">Qlik</p><h3 class="mt-1 text-xl font-bold">Visualización y análisis en Qlik</h3></div></div>
+        <div class="mt-7 grid gap-6 md:grid-cols-2">
+          <article class="project-card">
+            <div class="project-top bg-[#eafff1]"><span>01</span><svg viewBox="0 0 260 120" role="img" aria-label="Dashboard analítico desarrollado en Qlik"><circle cx="70" cy="60" r="38" fill="none" stroke="#009845" stroke-width="14"/><path d="M70 22a38 38 0 0 1 36 50" fill="none" stroke="#c8f169" stroke-width="14" stroke-linecap="round"/><rect x="132" y="30" width="82" height="12" rx="6" fill="#009845"/><rect x="132" y="55" width="108" height="12" rx="6" fill="#6ee7b7"/><rect x="132" y="80" width="64" height="12" rx="6" fill="#164e3b"/></svg></div>
+            <div class="project-body"><div class="tags"><span>Qlik</span><span>Analytics</span><span>Data Visualization</span></div><h3>Análisis de ventas en Qlik</h3><p>Aplicación desarrollada en Qlik para explorar indicadores, facilitar el análisis visual y apoyar la toma de decisiones a partir de datos estructurados.</p><div class="project-actions project-actions-single"><a href="https://drive.google.com/uc?export=download&amp;id=1l03y1HJe8JSvyzcrfEjgahdiu6mT5IIf" target="_blank" rel="noopener noreferrer" aria-label="Descargar proyecto analítico en Qlik desde Google Drive">Descargar proyecto <span>↓</span></a></div></div>
+          </article>
+        </div>
+
+        <div id="proyecto-tableau" class="mt-20 flex scroll-mt-28 items-center gap-3"><span class="h-px w-10 bg-lime"></span><div><p class="text-sm font-bold uppercase tracking-[.18em] text-lime">Tableau</p><h3 class="mt-1 text-xl font-bold">Dashboard interactivo en Tableau Public</h3></div></div>
+        <div class="mt-7 grid gap-6 md:grid-cols-2">
+          <article class="project-card">
+            <div class="project-top bg-[#e8f2ff]"><span>01</span><svg viewBox="0 0 260 120" role="img" aria-label="Dashboard desarrollado en Tableau"><rect x="32" y="70" width="28" height="30" rx="4" fill="#1f77b4"/><rect x="78" y="45" width="28" height="55" rx="4" fill="#ff7f0e"/><rect x="124" y="28" width="28" height="72" rx="4" fill="#2ca02c"/><rect x="170" y="54" width="28" height="46" rx="4" fill="#9467bd"/><path d="M32 32h166M32 54h166M32 76h166M32 100h166" stroke="#bfdbfe" stroke-width="3"/><circle cx="217" cy="33" r="9" fill="#1f77b4"/><circle cx="217" cy="60" r="9" fill="#ff7f0e"/><circle cx="217" cy="87" r="9" fill="#2ca02c"/></svg></div>
+            <div class="project-body"><div class="tags"><span>Tableau</span><span>Dashboard</span><span>Visual Analytics</span></div><h3>Analisis Air B&amp;B Roma</h3><p>Dashboard interactivo publicado en Tableau Public para explorar información mediante visualizaciones dinámicas y apoyar el análisis de datos.</p><div class="project-actions project-actions-single"><a href="https://public.tableau.com/app/profile/ram.n.maltes.arancibia/viz/Actividad3_17887166329020/Dashboard1" target="_blank" rel="noopener noreferrer" aria-label="Ver dashboard Actividad 3 en Tableau Public en una pestaña nueva">Ver dashboard <span>↗</span></a></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top bg-[#f1eaff]"><span>02</span><svg viewBox="0 0 260 120" role="img" aria-label="Segundo dashboard desarrollado en Tableau"><path d="M30 95 78 63 121 76 166 38 222 21" fill="none" stroke="#6b46c1" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="95" r="8" fill="#c8f169"/><circle cx="78" cy="63" r="8" fill="#805ad5"/><circle cx="121" cy="76" r="8" fill="#805ad5"/><circle cx="166" cy="38" r="8" fill="#805ad5"/><circle cx="222" cy="21" r="8" fill="#c8f169"/><path d="M30 104h200" stroke="#c4b5fd" stroke-width="3"/></svg></div>
+            <div class="project-body"><div class="tags"><span>Tableau</span><span>Dashboard</span><span>Visual Analytics</span></div><h3>Analisis Air B&amp;B NYC</h3><p>Segundo dashboard interactivo publicado en Tableau Public para explorar información mediante visualizaciones dinámicas y apoyar el análisis de datos.</p><div class="project-actions project-actions-single"><a href="https://public.tableau.com/app/profile/ram.n.maltes.arancibia/viz/Actividad4_17893154967360/Dashboard3" target="_blank" rel="noopener noreferrer" aria-label="Ver dashboard Actividad 4 en Tableau Public en una pestaña nueva">Ver dashboard <span>↗</span></a></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top bg-[#e8f5ff]"><span>03</span><svg viewBox="0 0 260 120" role="img" aria-label="Dashboard de Alumni Emprendedores desarrollado en Tableau"><circle cx="72" cy="60" r="31" fill="#1f77b4"/><path d="M72 38v44M50 60h44" stroke="#fff" stroke-width="7" stroke-linecap="round"/><rect x="127" y="29" width="101" height="13" rx="6" fill="#164e3b"/><rect x="127" y="54" width="79" height="13" rx="6" fill="#60a5fa"/><rect x="127" y="79" width="91" height="13" rx="6" fill="#c8f169"/></svg></div>
+            <div class="project-body"><div class="tags"><span>Tableau</span><span>Alumni</span><span>Emprendimiento</span></div><h3>Alumni Emprendedores</h3><p>Dashboard interactivo publicado en Tableau Public para visualizar información relacionada con emprendimientos de la comunidad Alumni.</p><div class="project-actions project-actions-single"><a href="https://public.tableau.com/app/profile/ram.n.maltes.arancibia/viz/AlumniEmprendedores/Dashboard1#1" target="_blank" rel="noopener noreferrer" aria-label="Ver dashboard Alumni Emprendedores en Tableau Public en una pestaña nueva">Ver dashboard <span>↗</span></a></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top bg-[#eafff1]"><span>04</span><svg viewBox="0 0 260 120" role="img" aria-label="Dashboard Sansanos por el Mundo desarrollado en Tableau"><circle cx="130" cy="60" r="43" fill="#dff7ed" stroke="#164e3b" stroke-width="4"/><path d="M91 60h78M130 18c17 13 26 27 26 42s-9 29-26 42M130 18c-17 13-26 27-26 42s9 29 26 42M92 43h76M92 77h76" fill="none" stroke="#164e3b" stroke-width="3"/><circle cx="187" cy="35" r="9" fill="#c8f169" stroke="#164e3b" stroke-width="3"/></svg></div>
+            <div class="project-body"><div class="tags"><span>Tableau</span><span>Alumni</span><span>Geovisualización</span></div><h3>Alumni en el mundo</h3><p>Dashboard interactivo publicado en Tableau Public para explorar la presencia de integrantes de la comunidad Alumni en distintos países.</p><div class="project-actions project-actions-single"><a href="https://public.tableau.com/app/profile/ram.n.maltes.arancibia/viz/Alumnifueradelpais/SansanosporelMundo" target="_blank" rel="noopener noreferrer" aria-label="Ver dashboard Alumni en el mundo en Tableau Public en una pestaña nueva">Ver dashboard <span>↗</span></a></div></div>
+          </article>
+        </div>
+
+        <div id="proyecto-python" class="mt-20 flex scroll-mt-28 items-center gap-3"><span class="h-px w-10 bg-lime"></span><div><p class="text-sm font-bold uppercase tracking-[.18em] text-lime">Python</p><h3 class="mt-1 text-xl font-bold">Análisis de datos y automatización</h3></div></div>
+        <div class="mt-7 grid gap-6 md:grid-cols-2">
+          <article class="project-card">
+            <div class="project-top bg-[#e8f5ff]"><span>01</span><svg viewBox="0 0 260 120" role="img" aria-label="Representación de trayectorias académicas conectadas"><circle cx="28" cy="60" r="15" fill="#3776ab"/><circle cx="105" cy="27" r="15" fill="#164e3b"/><circle cx="105" cy="93" r="15" fill="#164e3b"/><circle cx="228" cy="60" r="17" fill="#c8f169"/><path d="M43 56 89 33M43 64l46 23m31-59 91 27M120 91l91-26" fill="none" stroke="#3776ab" stroke-width="5" stroke-linecap="round"/></svg></div>
+            <div class="project-body"><div class="tags"><span>Python</span><span>Pandas</span><span>Data Analysis</span></div><h3>Trayectoria académica USM</h3><p>Análisis reproducible de 99.958 registros y 79.532 alumnos para estudiar trayectorias multiprograma y transiciones desde carreras técnicas hacia postgrado.</p><div class="project-actions"><a href="https://github.com/ramonmaltesa/Trayectorias-Acad-micas/blob/main/informe_trayectorias_usm.md" target="_blank" rel="noopener noreferrer" aria-label="Ver informe del proyecto Trayectoria académica USM en GitHub">Ver informe <span>↗</span></a><a href="https://github.com/ramonmaltesa/Trayectorias-Acad-micas/blob/main/analisis_trayectorias_usm.py" target="_blank" rel="noopener noreferrer" aria-label="Ver código Python del proyecto Trayectoria académica USM en GitHub">Ver código <span>↗</span></a></div></div>
+          </article>
+        </div>
+
+        <div id="proyecto-r" class="mt-20 flex scroll-mt-28 items-center gap-3"><span class="h-px w-10 bg-lime"></span><div><p class="text-sm font-bold uppercase tracking-[.18em] text-lime">R</p><h3 class="mt-1 text-xl font-bold">Análisis estadístico y documentación reproducible</h3></div></div>
+        <div class="mt-7 grid gap-6 md:grid-cols-2">
+          <article class="project-card">
+            <div class="project-top bg-[#e9f1fb]"><span>01</span><svg viewBox="0 0 260 120" role="img" aria-label="Documento analítico desarrollado con R Markdown"><rect x="43" y="9" width="174" height="102" rx="10" fill="#fff" stroke="#276dc3" stroke-width="4"/><path d="M69 35h61M69 55h119M69 75h82" stroke="#b7d0ec" stroke-width="8" stroke-linecap="round"/><circle cx="181" cy="79" r="22" fill="#276dc3"/><text x="171" y="87" fill="#fff" font-size="24" font-weight="700">R</text></svg></div>
+            <div class="project-body"><div class="tags"><span>R</span><span>R Markdown</span><span>Data Analysis</span></div><h3>Gestión Alumni USM</h3><p>Documento analítico reproducible desarrollado en R Markdown para presentar información y resultados vinculados con la gestión Alumni USM.</p><div class="project-actions project-actions-single"><a href="https://ramonmaltesa.github.io/Gestion-Alumni-USM/" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Gestión Alumni USM desarrollado en R Markdown en una pestaña nueva">Ver proyecto R Markdown <span>↗</span></a></div></div>
+          </article>
+        </div>
+
+        <div id="proyecto-html" class="mt-20 flex scroll-mt-28 items-center gap-3"><span class="h-px w-10 bg-lime"></span><div><p class="text-sm font-bold uppercase tracking-[.18em] text-lime">HTML</p><h3 class="mt-1 text-xl font-bold">Portfolio web personal</h3></div></div>
+        <div class="mt-7 grid gap-6 md:grid-cols-2">
+          <article class="project-card">
+            <div class="project-top bg-[#fff1e7]"><span>01</span><div class="flex h-full w-full items-center justify-center text-5xl font-extrabold tracking-[-.06em] text-[#e34f26]" aria-hidden="true">&lt;/&gt;</div></div>
+            <div class="project-body"><div class="tags"><span>HTML</span><span>CSS</span><span>Portfolio</span></div><h3>Dashboard Gestión Alumni USM</h3><p>Sitio web personal desarrollado en HTML y CSS para presentar perfil profesional, herramientas, proyectos destacados y capacitaciones.</p><div class="project-actions project-actions-single"><a href="https://ramonmaltesa.github.io/Dashboard-Alumni-USM/" target="_blank" rel="noopener noreferrer" aria-label="Ver Dashboard Gestión Alumni USM en GitHub Pages en una pestaña nueva">Ver dashboard <span>↗</span></a></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="capacitaciones" class="scroll-mt-20 border-y border-slate-200 bg-white py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <p class="section-kicker">CAPACITACIONES</p><h2 class="section-title">Formación y credenciales</h2>
+        <p class="mt-4 max-w-2xl text-slate-600">Cursos y credenciales recientes en plataformas de analítica, visualización de datos y ecosistemas lakehouse.</p>
+        <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <article class="skill-card"><span class="skill-icon bg-[#fff0ec]"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/databricks.svg" alt="Logo de Databricks" loading="lazy"></span><div><h3>Databricks Fundamentals</h3><p>Credencial oficial de Databricks.</p><a href="https://credentials.databricks.com/4b21ec12-bc77-4711-a7cc-901b55c190a8#acc.0nlimcqj" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex font-bold text-forest">Ver credencial ↗</a></div></article>
+          <article class="skill-card"><span class="skill-icon bg-[#eafff1]"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/qlik.svg" alt="Logo de Qlik" loading="lazy"></span><div><h3>Data Literacy Foundations</h3><p>Qlik Learning Journey completado.</p><a href="https://learning.qlik.com/student/award/cSSKqNwGwTTo1ZWaVD97D2ZV" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex font-bold text-forest">Ver credencial ↗</a></div></article>
+          <article class="skill-card"><span class="skill-icon bg-[#eafff1]"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/qlik.svg" alt="Logo de Qlik" loading="lazy"></span><div><h3>Qlik Cloud Analyze</h3><p>Qlik Learning Journey completado.</p><a href="https://learning.qlik.com/student/award/9UcK1LCg5F9yvB4TfCYZ83C9" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex font-bold text-forest">Ver credencial ↗</a></div></article>
+          <article class="skill-card"><span class="skill-icon bg-[#fff0ec]"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/databricks.svg" alt="Logo de Databricks" loading="lazy"></span><div><h3>AI Agent Fundamentals</h3><p>Credencial oficial de Databricks.</p><a href="https://credentials.databricks.com/f4c6ad66-e501-4dce-b3b5-3fab6a0e7d52#acc.hjs1Oe6W" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex font-bold text-forest">Ver credencial ↗</a></div></article>
+          <article class="skill-card"><span class="skill-icon bg-[#e8f5ff]"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/anthropic.svg" alt="Logo de Anthropic" loading="lazy"></span><div><h3>Claude Code in Action</h3><p>Anthropic Education</p><a href="https://verify.skilljar.com/c/bdxju2nobcvv" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex font-bold text-forest">Ver credencial ↗</a></div></article>
+          <article class="skill-card"><span class="skill-icon bg-[#fff0ec]"><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/databricks.svg" alt="Logo de Databricks" loading="lazy"></span><div><h3>Generative AI Fundamentals</h3><p>Databricks Academy</p><a href="https://credentials.databricks.com/4cfa3d4e-89a7-42b8-b26c-b0f1371ade2e" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex font-bold text-forest">Ver credencial ↗</a></div></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto" class="bg-lime py-12 text-ink">
+    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-8 px-5 md:flex-row md:items-end lg:px-8">
+      <div><p class="text-sm font-bold uppercase tracking-widest">¿Hablamos?</p><h2 class="mt-2 max-w-xl text-3xl font-extrabold tracking-tight sm:text-4xl">Transformemos tus datos en una ventaja competitiva.</h2></div>
+      <div class="flex flex-wrap gap-5 font-bold"><a href="https://www.linkedin.com/in/ramonmaltesa" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/ramonmaltesa" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="mailto:ramon.maltes.a@gmail.com">Correo ↗</a></div>
+    </div>
+    <div class="mx-auto mt-10 max-w-7xl border-t border-ink/20 px-5 pt-6 text-sm lg:px-8">© <span id="year"></span> Ramón Maltes Arancibia. Diseñado con foco en claridad.</div>
+  </footer>
+</body>
+</html>
